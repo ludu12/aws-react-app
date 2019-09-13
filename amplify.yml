@@ -3,13 +3,14 @@ frontend:
   phases:
     preBuild:
       commands:
-        - yarn install
+        - npm i
+        - npm run lint
     build:
       commands:
-        - yarn run build
+        - npm run build
     postBuild:
       commands:
-        - yarn test
+        - npm test
   artifacts:
     baseDirectory: build
     files:
