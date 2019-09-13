@@ -7,8 +7,6 @@ frontend:
     build:
       commands:
         - yarn run build
-    test:
-      commands:
         - yarn test
   artifacts:
     baseDirectory: build
