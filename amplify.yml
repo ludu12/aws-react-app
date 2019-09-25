@@ -10,7 +10,7 @@ frontend:
         - npm run build
     postBuild:
       commands:
-        - npm test
+        - npm run test:nowatch
   artifacts:
     baseDirectory: build
     files:
