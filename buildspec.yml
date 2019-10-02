@@ -15,9 +15,11 @@ phases:
       - echo Compiling the Node.js code
       - npm run build
       - npm run test:nowatch
+      - docker-compose up -d
   post_build:
     commands:
       - echo Build completed on `date`
+      - docker-compose downg
 # Include only the files required for your application to run.
 # Do not use recursively include artifacts from node_modules directory as it will include unnecessary packages
 # used only for building and testing.
